@@ -1,3 +1,3 @@
 'use strict'
-exports.parse = require('@flourd/toml/parse')
-exports.stringify = require('@flourd/toml/stringify')
+exports.parse = require('./lib/parse')
+exports.stringify = require('./lib/stringify')

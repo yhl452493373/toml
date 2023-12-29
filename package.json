@@ -90,6 +90,7 @@
     "toml": "./bin/toml.js"
   },
   "scripts": {
+    "build": "browserify ./index.js -o ./dist/toml.js -s TOML",
     "prepack": "rm -f *~",
     "postpublish": "git push --follow-tags",
     "cli": "node ./bin/toml"
@@ -112,6 +113,7 @@
     "sade": "1.7.4"
   },
   "devDependencies": {
+    "browserify": "^17.0.0",
     "ansi": "^0.3.1",
     "approximate-number": "^2.0.0",
     "glob": "^7.1.2",

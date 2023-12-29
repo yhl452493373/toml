@@ -46,7 +46,7 @@ interface FuncStringify {
    *
    * `moment` objects are treated the same as native `Date` objects, in this respect.
    */
-  (obj: JsonMap): string
+  (obj: JsonMap, separator?: string): string
 
   /**
    * Serialize a value as TOML would. This is a fragment and not a complete valid TOML document.
