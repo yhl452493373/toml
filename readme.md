@@ -102,7 +102,7 @@ bar = [1,2,3]`)
 {abc: {foo: 123, bar: [1,2,3]}}
 */
 
-const str = TOML.stringify(obj)
+const str = TOML.stringify(obj,{separator:'',indentSize:0})
 /* str =
 [abc]
 foo = 123
